@@ -3,80 +3,112 @@
 
 <head>
 
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" type="text/css" href="style.css">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" type="text/css" href="style.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+  <title>JD Photography</title>
+  <meta name="author" content="John Doe">
+  <meta name="description" content="JD Photography web page">
+  <meta name="keywords" content="JD, John, About, Contact">
+  <link rel="icon" type="image/png" href="camera.jpg">
 
 </head>
 
 <body style="font-family:Verdana;">
 
-    <div class="container">
+  <div class="container">
 
-        <div class="navbar">
-            <a href="home_page.html">Home Page</a>
-            <a href="About.html">About</a>
-            <a href="Contact.html">Contact</a>
-        </div>
-
+    <div class="navbar">
+      <a href="home_page.html">Home Page</a>
+      <a href="About.html">About</a>
+      <a href="Contact.html" style="color:orange;text-decoration: underline">Contact</a>
     </div>
 
-    <br>
-    <br>
-    <br>
-    <br>
-    <br>
+  </div>
 
+  <br>
+  <br>
+  <br>
+
+  <h1 style="margin-left:2%">Contact us:</h1>
+
+  <div style="padding: 0% 3% 0% 4%;">
     <p><i><b>Address: </b></i>445 Mount Eden Road, Mount Eden, Auckland</p>
     <p><i><b>Tel: </b></i>(939) 353-1107</p>
     <p><i><b>Working Hours: </b></i>Monday-Friday 9:00 AM to 4:00 PM, Saturday and Sunday 9:00 AM to 2:00 PM</p>
 
     <div class="container_form">
-        <form action="/action_page.php">
-          <div class="row_form">
-            <div class="col-25">
-              <label for="fname"><i><b>Name:</b></i></label>
-            </div>
-            <div class="col-75">
-              <input type="text" id="fname" name="firstname" placeholder="John">
-            </div>
+      <form action="/action_page.php">
+        <div class="row_form">
+          <div class="col-25">
+            <label for="fname"><i><b>Name:</b></i></label>
           </div>
-          <div class="row_form">
-            <div class="col-25">
-              <label for="lname"><i><b>Surname:</b></i></label>
-            </div>
-            <div class="col-75">
-              <input type="text" id="lname" name="lastname" placeholder="Doe">
-            </div>
+          <div class="col-75">
+            <input type="text" id="fname" name="firstname" placeholder="John">
           </div>
-          <div class="row_form">
-            <div class="col-25">
-              <label for="email"><i><b>Email:</b></i></label>
-            </div>
-            <div class="col-75">
-              <input type="text" id="email" name="email" placeholder="john_doe@gmail.com">
-            </div>
+        </div>
+        <div class="row_form">
+          <div class="col-25">
+            <label for="lname"><i><b>Surname:</b></i></label>
           </div>
-          <div class="row_form">
-            <div class="col-25">
-              <label for="subject"><i><b>Subject:</b></i></label>
-            </div>
-            <div class="col-75">
-              <input type="text" id="subject" name="subject" placeholder="Your subject">
-            </div>
+          <div class="col-75">
+            <input type="text" id="lname" name="lastname" placeholder="Doe">
           </div>
-          <div class="row_form">
-            <div class="col-25">
-              <label for="subject"><i><b>Text:</b></i></label>
-            </div>
-            <div class="col-75">
-              <textarea id="subject" name="text" placeholder="Write something.." style="height:200px"></textarea>
-            </div>
+        </div>
+        <div class="row_form">
+          <div class="col-25">
+            <label for="email"><i><b>Email:</b></i></label>
           </div>
-          <div class="row_form">
-            <input type="submit" value="Send">
+          <div class="col-75">
+            <input type="text" id="email" name="email" placeholder="john_doe@gmail.com">
           </div>
-        </form>
-      </div>
+        </div>
+        <div class="row_form">
+          <div class="col-25">
+            <label for="dateTime"><i><b>Choose a meeting on:</b></i></label>
+          </div>
+          <div class="col-75">
+            <input type="datetime-local" id="dateTime" name="dateTime" value="2018-06-12T19:30" min="2018-06-07T00:00"
+              max="2018-06-14T00:00" />
+          </div>
+        </div>
+        <div class="row_form">
+          <div class="col-25">
+            <label for="subject"><i><b>Subject:</b></i></label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="subject" name="subject" placeholder="Your subject">
+          </div>
+        </div>
+        <div class="row_form">
+          <div class="col-25">
+            <label for="subject"><i><b>Text:</b></i></label>
+          </div>
+          <div class="col-75">
+            <textarea id="subject" name="text" placeholder="Write something.." style="height:200px"></textarea>
+          </div>
+        </div>
+        <div class="row_form">
+          <input type="submit" value="Send" style="margin-top: 10px">
+        </div>
+      </form>
+    </div>
+    <br>
+    <br>
+  </div>
+
+
+  <div style="text-align: right;">
+    <a href="#top"><img src="arrow_up.png" alt="arrow_up" style="width:2%;"></a>
+  </div>
+
+  <hr class="styleHrFooter ">
+
+  <footer>
+    <a class="fa fa-facebook"></a>
+    <a class="fa fa-twitter"></a>
+    <a class="fa fa-linkedin"></a>
+  </footer>
 
 </body>
 

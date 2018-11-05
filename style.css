@@ -59,6 +59,12 @@ hr.styleHr {
   border-radius: 1px;
 }
 
+hr.styleHrFooter {
+  left: 0;
+  border: 2px solid #333;
+  border-radius: 1px;
+}
+
 h1{
   color: #333;
 }
@@ -149,6 +155,11 @@ input[type=submit]:hover {
   height: 300px; /* Should be removed. Only for demonstration */
 }
 
+#dateTime{
+  border-radius: 5px;
+  padding: 7px;
+}
+
 /* Clear floats after the columns */
 .row_about:after {
   content: "";
@@ -201,3 +212,89 @@ input[type=submit]:hover {
   }
 
 }
+
+/*About the Bio*/
+.section {
+	clear: both;
+	padding: 0px;
+	margin: 0px;
+}
+
+/*  COLUMN SETUP  */
+.col {
+	display: block;
+	float:left;
+	margin: 1% 0 1% 1.6%;
+}
+.col:first-child { margin-left: 0; }
+
+
+/*  GROUPING  */
+.group:before,
+.group:after {
+	content:"";
+	display:table;
+}
+.group:after {
+	clear:both;
+}
+.group {
+    zoom:1; /* For IE 6/7 */
+}
+
+/*  GRID OF THREE  */
+.span_2_of_2 {
+	width: 66.1%;
+}
+.span_1_of_2 {
+	width: 32.2%;
+}
+
+/*  GO FULL WIDTH AT LESS THAN 480 PIXELS */
+
+@media only screen and (max-width: 480px) {
+	.col { margin: 1% 0 1% 0%;}
+	.span_2_of_2, .span_1_of_2 { width: 100%; }
+}
+
+/*For icons*/
+.fa {
+  padding: 20px;
+  font-size: 30px;
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2px;
+  border-radius: 50%;
+}
+
+.fa:hover {
+    opacity: 0.7;
+}
+
+.fa-facebook {
+  background: #3B5998;
+  color: white;
+}
+
+.fa-twitter {
+  background: #55ACEE;
+  color: white;
+}
+
+.fa-linkedin {
+  background: #007bb5;
+  color: white;
+}
+
+footer{
+  text-align: center;
+}
+
+/*Use of external fonts*/
+@font-face {
+  font-family: "Kimberley";
+  src: url(http://www.princexml.com/fonts/larabie/kimberle.ttf) format("truetype");
+}
+b { font-family: "Kimberley", sans-serif;
+font-size: 20px;}
