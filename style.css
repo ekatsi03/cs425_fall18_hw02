@@ -104,6 +104,14 @@ input[type=text], select, textarea {
   resize: vertical;
 }
 
+.select1{
+  margin-bottom: 12px;
+}
+
+.select2{
+  margin-bottom: 5px;
+}
+
 label {
   padding: 12px 12px 12px 0;
   display: inline-block;

@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
 
@@ -11,6 +11,7 @@
   <meta name="description" content="JD Photography web page">
   <meta name="keywords" content="JD, John, About, Contact">
   <link rel="icon" type="image/png" href="camera.jpg">
+  <meta charset="UTF-8">
 
 </head>
 
@@ -24,6 +25,8 @@
       <a href="Contact.html" style="color:orange;text-decoration: underline">Contact</a>
     </div>
 
+    <a id="top"></a>
+
   </div>
 
   <br>
@@ -35,7 +38,8 @@
   <div style="padding: 0% 3% 0% 4%;">
     <p class="letter_color"><i><b>Address: </b></i>445 Mount Eden Road, Mount Eden, Auckland</p>
     <p class="letter_color"><i><b>Tel: </b></i>(939) 353-1107</p>
-    <p class="letter_color"><i><b>Working Hours: </b></i>Monday-Friday 9:00 AM to 4:00 PM, Saturday and Sunday 9:00 AM to 2:00 PM</p>
+    <p class="letter_color"><i><b>Working Hours: </b></i>Monday-Friday 9:00 AM to 4:00 PM, Saturday and Sunday 9:00 AM
+      to 2:00 PM</p>
 
     <div class="container_form">
       <form action="/action_page.php">
@@ -65,11 +69,70 @@
         </div>
         <div class="row_form">
           <div class="col-25">
-            <label class="letter_color" for="dateTime"><i><b>Choose a meeting on:</b></i></label>
+            <label class="letter_color"><i><b>Choose a meeting on:</b></i></label>
           </div>
           <div class="col-75">
-            <input type="datetime-local" id="dateTime" name="dateTime" value="2018-06-12T19:30" min="2018-06-07T00:00"
-              max="2018-06-14T00:00" />
+            <select class="select1">
+              <option value="1">1</option>
+              <option value="2">2</option>
+              <option value="3">3</option>
+              <option value="4">4</option>
+              <option value="5">5</option>
+              <option value="6">6</option>
+              <option value="7">7</option>
+              <option value="8">8</option>
+              <option value="9">9</option>
+              <option value="10">10</option>
+              <option value="11">11</option>
+              <option value="12">12</option>
+              <option value="13">13</option>
+              <option value="14">14</option>
+              <option value="15">15</option>
+              <option value="16">16</option>
+              <option value="17">17</option>
+              <option value="18">18</option>
+              <option value="19">19</option>
+              <option value="20">20</option>
+              <option value="21">21</option>
+              <option value="22">22</option>
+              <option value="23">23</option>
+              <option value="24">24</option>
+              <option value="25">25</option>
+              <option value="26">26</option>
+              <option value="27">27</option>
+              <option value="28">28</option>
+              <option value="29">29</option>
+              <option value="30">30</option>
+              <option value="31">31</option>
+            </select>
+
+            <select class="select1">
+              <option value="January">January</option>
+              <option value="February">February</option>
+              <option value="March">March</option>
+              <option value="April">April</option>
+              <option value="May">May</option>
+              <option value="June">June</option>
+              <option value="July">July</option>
+              <option value="August">August</option>
+              <option value="September">September</option>
+              <option value="October">October</option>
+              <option value="November">November</option>
+              <option value="December">December</option>
+            </select>
+
+            <select class="select2">
+              <option value="2018">2018</option>
+              <option value="2019">2019</option>
+            </select>
+          </div>
+        </div>
+        <div class="row_form">
+          <div class="col-25">
+            <label class="letter_color" for="time"><i><b>At:</b></i></label>
+          </div>
+          <div class="col-75">
+            <input type="text" id="time" name="time" placeholder="12:00 AM">
           </div>
         </div>
         <div class="row_form">
@@ -85,7 +148,7 @@
             <label class="letter_color" for="subject"><i><b>Text:</b></i></label>
           </div>
           <div class="col-75">
-            <textarea id="subject" name="text" placeholder="Write something.." style="height:200px"></textarea>
+            <textarea id="text" name="text" placeholder="Write something.." style="height:200px"></textarea>
           </div>
         </div>
         <div class="row_form">
@@ -97,9 +160,8 @@
     <br>
   </div>
 
-
   <div style="text-align: right;">
-    <a href="#top"><img src="arrow_up.png" alt="arrow_up" style="width:2%;"></a>
+    <a href="#top"><img src="arrow_up.png" alt="arrow_up" style="width:20px;"></a>
   </div>
 
   <hr class="styleHrFooter ">
